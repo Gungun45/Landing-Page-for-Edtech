@@ -1,0 +1,193 @@
+/*css reset*/
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:90px;
+}
+#navbar{
+    display:flex;
+   position: sticky;
+   top: 0px;
+   border-radius: 20px;
+   font-family: monospace;
+   align-items: center;
+}
+#logo{
+    margin: 3px 5px;
+
+}
+#logo img{
+  margin: 2px 4px;
+  height:60px;
+}
+/*navigation bar designing*/
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width:100%;
+    opacity: 0.69;
+    z-index: -1;
+}
+#navbar li{
+    list-style: none;
+    text-decoration: none;
+    font-size:1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding:6px 20px;
+    border-radius: 23px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+/*utility class*/
+.first{
+    font-size:2.0rem ;
+    padding:9px;
+    
+}
+h2{
+    font-size:3.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h3{
+    font-size: 1.5rem;
+    padding: 2px;
+}
+.center{
+    text-align: center;
+}
+    /*home section*/
+   #home{
+        display:flex;
+        flex-direction: column;
+        padding: 3px 250px;
+        height: 460px;
+        justify-content: center;
+        align-items: center;
+    }
+    #home::before{
+        content: " ";
+        background:url('ed.jpeg') no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height:100%;
+        width:100%;
+        opacity: 0.6;
+        z-index: -1;
+    }
+
+#home h1{
+    color:rgb(37, 31, 31);
+    text-align: center;
+    font: bold;
+}
+.btn{
+    padding: 6px 22px;
+    border: 2px solid rgb(17, 15, 15);
+    color:black;
+    border-radius: 6px;
+    margin: 17px;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+/*services secion*/
+#services{
+    display: flex;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    border: 2px solid red;
+    height: 300px;
+    width: 500px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+}
+.box img{
+    display: block;
+    margin: auto; 
+    height: 100px;
+}
+#services.box p{
+color: rgb(49, 4, 4);
+}
+/*client section*/
+
+#client{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+#client img{
+    height: 190px;
+}
+.client-item{
+    padding: 35px;
+ }
+ #client-section::before{
+    content: "";
+    position: absolute;
+    background:url('../food.jpg');
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    opacity: 0.8;
+ }
+/*contact section*/
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:url('../contactus.jpg');
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 6px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    border: 2px solid black;
+}
+#contact-box form{
+    width: 60%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+}
